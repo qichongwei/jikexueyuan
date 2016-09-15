@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1"/>
+    <title>前端高级工程师面试题</title>
+    <link href="jike.css" rel="stylesheet"  type="text/css"/>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" ></script>
+</head>
+<body>
+<div class="container">
+    <h1>前端高级工程师面试题<span>点击进行查看</span></h1>
+    <h2>1.html&&css</h2>
+    <div class="text">
+        <p class="question">1.xhtml和html有什么区别?</p>
+        <p class="answer">HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+            最主要的不同：
+            XHTML 元素必须被正确地嵌套。
+            XHTML 元素必须被关闭。
+            标签名必须用小写字母。
+            XHTML 文档必须拥有根元素。
+        </p>
+        <p class="question">2.前端页面有哪三层构成，分别是什么?作用是什么?</p>
+        <p class="answer">结构层 Html 表示层 CSS 行为层 js</p>
+        <p class="question">3.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</p>
+        <p class="answer">Ie(Ie内核) 火狐（Gecko） 谷歌（webkit） opear(Presto)</p>
+        <p class="question">4.写出几种IE6 BUG的解决方法</p>
+        <p class="answer">1.双边距BUG float引起的 使用display<br/>
+            2.像素问题 使用float引起的 使用dislpay:inline -3px<br/>
+            3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active<br/>
+            4.Ie z-index问题 给父级添加position:relative<br/>
+            5.Png 透明 使用js代码 改<br/>
+            6.Min-height 最小高度 ！Important 解决’<br/>
+            7.select 在ie6下遮盖 使用iframe嵌套<br/>
+            8.为什么没有办法定义1px左右的宽度容器（IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）<br/>
+        </p>
+        <p class="question">5.描述css reset的作用和用途。</p>
+        <p class="answer">Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+        <p class="question">6.解释css sprites，如何使用。</p>
+        <p class="answer">Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量</p>
+        <p class="question">7.你如何对网站的文件和资源进行优化?期待的解决方案包括：</p>
+        <p class="answer">文件合并<br/>
+            文件最小化/文件压缩<br/>
+            使用CDN托管<br/>
+            缓存的使用<br/>
+        </p>
+        <p class="question">8.清除浮动的几种方式，各自的优缺点</p>
+        <p class="answer">1.使用空标签清除浮动 clear:both（理论上能清楚任何标签，，，增加无意义的标签）<br/>
+            2.使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE）<br/>
+            3.是用afert伪元素清除浮动(用于非IE浏览器)<br/>
+        </p>
+    </div>
+    <h2>2.Javascript</h2>
+    <div class="text">
+        <p class="question">9.例举3种强制类型转换和2种隐式类型转换?</p>
+        <p class="answer">强制（parseInt,parseFloat,number）<br/>
+            隐式（== – ===）
+        </p>
+        <p class="question">10.IE和DOM事件流的区别</p>
+        <p class="answer">1.执行顺序不一样、<br/>
+            2.参数不一样<br/>
+            3.事件加不加on<br/>
+            4.this指向问题<br/>
+        </p>
+        <p class="question">11.IE和标准下有哪些兼容性的写法</p>
+        <p class="answer">Var ev = ev || window.event<br/>
+            document.documentElement.clientWidth || document.body.clientWidth<br/>
+            Var target = ev.srcElement||ev.target<br/>
+        </p>
+        <p class="question">12.事件委托是什么</p>
+        <p class="answer">让利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！</p>
+        <p class="question">13.解释jsonp的原理，以及为什么不是真正的ajax</p>
+        <p class="answer">动态创建script标签，回调函数<br/>
+            Ajax是页面无刷新请求数据操作
+        </p>
+        <p class="question">14.javascript的本地对象，内置对象和宿主对象</p>
+        <p class="answer">本地对象为array obj regexp等可以new实例化<br/>
+            内置对象为gload Math 等不可以实例化的<br/>
+            宿主为浏览器自带的document,window 等<br/>
+        </p>
+        <p class="question">15.document load 和document ready的区别</p>
+        <p class="answer">Document.onload 是在结构和样式加载完才执行js<br/>
+            Document.ready原生种没有这个方法，jquery中有 $().ready(function)
+        </p>
+        <p class="question">16.javascript的同源策略</p>
+        <p class="answer">一段脚本只能读取来自于同一来源的窗口和文档的属性，这里的同一来源指的是主机名、协议和端口号的组合</p>
+        <p class="question">17经常遇到的浏览器兼容问题：</p>
+        <p class="answer">1.在有的浏览器中，默认字体大小为12px,所以在设字体大小的时候，最小设为12px，如果在做的过程中，发现字体小于12，可直接作为图片使用<br/>
+            2.a标签对里不能嵌套a标签对<br/>
+            3.若给a标签内的内容样式加上样式，需要设置display:block;（在IE中如果设置宽高会自动变成块，在FF中则不会），但如果设置了float属性，就不需要设置display:block。<br/>
+            4.ul，ol在FF默认情况下，有list-style-type样式和padding值，dl在IE和FF默认情况下，有padding值，所以应该事先声明ul,li,ol,dl,dd,dd{margin:0;padding:0}。<br/>
+            5.作为外部 wrapper 的 div 不要定死高度, 最好还加上 overflow: hidden.以达到高度自适应<br/>
+            6.关于手形光标. cursor: pointer. 而hand 只适用于 IE.<br/>
+        </p>
+        <p class="question">18:如果让你来制作一个访问量很高的大型网站，你会如何来管理所有CSS文件、JS与图片?</p>
+        <p class="answer">把所有的CSS文件都放入一个样式表中,通过把所有的脚本放到一个文件中来减少HTTP请求的方法。js文件也采用同样的方法。把所有的背景图像都放到一个图片文件中，然后通过CSS的background-image和background-position属性来显示图片的不同部分。</p>
+        <p class="question">19.说说YSlow(可以详细一点)</p>
+        <p class="answer">yslow是一个工具，也可以理解成是一个插件，是基于Mozilla Firefox上firebug插件的一个插件。它的出现的主要目的就是检测我们的页面性能。它让用户可以就近取得所需的内容，解决网络拥挤的状况，提高用户访问网站的响应速度；其次，yahoo在ETags配置上也有独特之处，声明过期，就是说，用户从服务器取数据的时候，如果文件变化了，给他反馈新的文件，如果文件没有变化，只需告诉客户端没有变化即可，不必再把文件取回来，这样就节省了大量的网络带宽和资源。另外，只要将那些在加载过程中要执行的脚本放到底部，就可以实现最大的下载并行。</p>
+     </div>
+    <h2>3.前端开发面试知识点大纲</h2>
+    <div class="text">
+        <p class="question">HTML&CSS</p>
+        <p class="answer">对Web标准的理解、浏览器内核差异、兼容性、hack、CSS基本功：布局、盒子模型、选择器优先级及使用、HTML5、CSS3、移动端适应</p>
+        <p class="question">JavaScript</p>
+        <p class="answer"> 数据类型、面向对象、继承、闭包、插件、作用域、跨域、原型链、模块化、自定义事件、内存泄漏、事件机制、异步装载回调、模板引擎、Nodejs、JSON、ajax等。</p>
+        <p class="question">其他：</p>
+        <p class="answer"> HTTP、安全、正则、优化、重构、响应式、移动端、团队协作、可维护、SEO、UED、架构、职业生涯
+        </p>
+    </div>
+</div>
+<script src="jike.js"></script>
+</body>
+</html>

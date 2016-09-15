@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度新闻后台</title>
+    <link href="jike.css" rel="stylesheet" type="text/css"/>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" ></script>
+</head>
+<body>
+<div class="header">
+    <h2>百度新闻后台管理系统</h2>
+</div>
+<div class="left">
+    <h4>功能菜单</h4>
+    <div class="line"></div>
+    <a class="div3" href="#">样式无应用</a>
+    <a class="div3" href="#">样式无应用</a>
+    <a class="div3" href="#">样式无应用</a>
+    <a class="div3" href="#">样式无应用</a>
+</div>
+<div class="right">
+    <form action="qiwei.php" method="post">
+<div><label for="newstitle">新闻标题:</label><input type="text" name="newstitle" id="newstitle" ></div>
+        <div><label for="newsimg">新闻图片:</label><input type="text" name="newsimg" id="newsimg" ></div>
+            <div> <label for="newscontent">新闻内容:</label><textarea type="text" name="newscontent" id="newscontent" ></textarea></div>
+                <div>  <label for="newstime">新闻时间:</label><input type="date" name="newstime" id="newstime" ></div>
+        <input type="submit" value="上传"><input type="reset" value="重置">
+    </form>
+</div>
+
+<script src="jike.js"></script>
+</body>
+</html>

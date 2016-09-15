@@ -1,0 +1,99 @@
+/*设置通配样式*/
+*{
+    padding: 0;
+    margin: 0;
+}
+.contain{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+/*设置背景图片*/
+body{
+    background: url(u=1.jpg);
+    background-size: 100% 100%;
+}
+/*顶部样式*/
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: #B2E298;
+}
+h3{
+font-size:30px;
+   padding-top: 15px;
+    margin-left: 30px;
+    color: #8a6d3b;
+}
+.div1{
+    float: right;
+    padding-bottom: 10px;
+    margin-right: 50px;
+    position: relative;
+    top:-10px;
+}
+.div1 a{
+   text-decoration: none;
+}
+/*左半部分样式*/
+.left{
+    width: 20%;
+    height: 500px;
+    margin-top: 5px;
+    background-color: #46b8da;
+    padding-top: 5px;
+    float: left;
+}
+.div1 a:hover{
+    color: white;
+}
+h4{
+    text-align: center;
+    color:#2b542c;
+    letter-spacing: 5px;
+}
+.line{
+    width: 90%;
+    height: 0;
+    margin: 0 auto;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #fff;
+    margin-top: 5px;
+}
+.div3{
+    width: 80%;
+    height: 20px;
+    background:-webkit-linear-gradient(#46b8da,#0000cc);
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+/*右半部份样式*/
+.right{
+    float: right;
+    width: 80%;
+    height: 500px;
+    padding-top: 5px;
+}
+/*表单样式借鉴bootstrap*/
+table{
+    margin-top: 50px;
+   padding-left: 30px;
+}
+/*尾部*/
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    clear: both;
+    padding-top: 15px;
+}
+.footer span{
+   text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+ }
+

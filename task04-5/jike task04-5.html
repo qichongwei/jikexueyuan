@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="author" />
+    <style>
+    h2 {
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>初级Web前端工程师面试必看面试题（HTML+CSS）</h2>
+    <h3>1.对WEB标准以及W3C的理解与认识？</h3>
+    <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、 内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;
+    </p>
+    <h3>2.XHTML和HTML有什么区别？</h3>
+    <p>　HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+        <br/> 　　最主要的不同：
+        <br/> 　　XHTML 元素必须被正确地嵌套。
+        <br/> 　　XHTML 元素必须被关闭。
+        <br/> 　　标签名必须用小写字母。
+        <br/> 　　XHTML 文档必须拥有根元素。</p>
+    <h3>3.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?</h3>
+    <p>用于声明文档使用那种规范(HTML/XHTML)一般为 严格 过度 基于框架的html文档 　　加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug</p>
+    <h3>4.行内元素有哪些?块级元素有哪些?CSS的盒模型?</h3>
+    <p>块级元素：div p h1 h2 h3 h4 form ul
+        <br/> 　　行内元素: a b br i span input select
+        <br/> 　　Css盒模型:内容，border ,margin，padding</p>
+    <h3>5.CSS引入的方式有哪些? link和@import的区别是?</h3>
+    <p>内联 内嵌 外链 导入
+        <br/> 区别 ：同时加载
+        <br/> 前者无兼容性，后者CSS2.1以下浏览器不支持
+        <br/> Link 支持使用javascript改变样式，后者不可</p>
+    <h3>6.CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?</h3>
+    <p>标签选择符 类选择符 id选择符
+        <br/> 　　继承不如指定 Id>class>标签选择
+        <br/> 　　后者优先级高
+    </p>
+    <h3>7.前端页面有哪三层构成，分别是什么?作用是什么?</h3>
+    <p>结构层 HTML 表示层 CSS 行为层 js</p>
+    <h3>8.CSS的基本语句构成是?</h3>
+    <p>选择器{属性1:值1;属性2:值2;……}
+    </p>
+    <h3>9.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?</h3>
+    <p>Ie(Ie内核) 火狐(Gecko) 谷歌(webkit) opear(Presto)</p>
+    <h3>　10.写出几种IE6 BUG的解决方法
+</h3>
+    <p>　1.双边距BUG float引起的 使用display
+        <br/> 　　2.3像素问题 使用float引起的 使用dislpay:inline -3px
+        <br/> 　　3.超链接hover 点击后失效 使用正确的书写顺序 link visited hover active
+        <br/> 　　4.Ie z-index问题 给父级添加position:relative
+        <br/> 　　5.Png 透明 使用js代码 改
+        <br/> 　　6.Min-height 最小高度 !Important 解决’
+        <br/> 　　7.select 在ie6下遮盖 使用iframe嵌套
+        <br/> 　　8.为什么没有办法定义1px左右的宽度容器(IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px)
+        <br/> 　　9.ie 6 不支持!important
+    </p>
+    <h3>11.img标签上title与alt属性的区别是什么?</h3>
+    <p>Alt 当图片不显示是 用文字代表。 　　Title 为该属性提供信息</p>
+    <h3>　12.描述css reset的作用和用途。</h3>
+    <p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+    <h3>13.解释css sprites，如何使用。</h3>
+    <p>Css 精灵 把一堆小的图片整合到一张大的图片上，减轻服务器对图片的请求数量</p>
+    <h3>14.浏览器标准模式和怪异模式之间的区别是什么?</h3>
+    <p>盒子模型 渲染模式的不同
+        <br/> 　　使用 window.top.document.compatMode 可显示为什么模式</p>
+    <h3>15.你如何对网站的文件和资源进行优化?期待的解决方案包括那些？</h3>
+    <p>文件合并
+        <br/> 　　文件最小化/文件压缩
+        <br/> 　　使用CDN托管
+        <br/> 　　缓存的使用
+    </p>
+    <h3>16.什么是语义化的HTML?</h3>
+    <p>直观的认识标签 对于搜索引擎的抓取有好处</p>
+    <h3>17.清除浮动的几种方式，各自的优缺点</h3>
+    <p>1.使用空标签清除浮动 clear:both(理论上能清楚任何标签，增加无意义的标签)
+        <br/> 　　2.使用overflow:auto(空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE)
+        <br/> 　　3.是用afert伪元素清除浮动(用于非IE浏览器)
+    </p>
+    <h3>18.css hack</h3>
+    <p>_marging \\IE 6
+        <Br/> 　　+margin \\IE 7
+        <Br/> 　　Marging:0 auto \9 所有Ie
+        <Br/> 　　Margin \0 \\IE 8</p>
+    <h3>19.CSS的盒子模型？</h3>
+    <p>（1）两种， IE 盒子模型、标准 W3C 盒子模型；IE 的content部分包含了 border 和 pading;
+        <br/> （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+    </p>
+    <h3>20.如何居中div,如何居中一个浮动元素?</h3>
+    <p>给div设置一个宽度，然后添加margin:0 auto属性
+        <br/> div{
+        <br/> width:200px;
+        <br/> margin:0 auto;
+        <br/> }
+        <br/> 居中一个浮动元素
+        <br/>
+        <br/> 确定容器的宽高 宽500 高 300 的层
+        <br/> 设置层的外边距
+        <br/>
+        <br/> .div {
+        <br/> Width:500px ; height:300px;//高度可以不设
+        <br/> Margin: -150px 0 0 -250px;
+        <br/> position:relative;相对定位
+        <br/> background-color:pink;//方便看效果
+        <br/> left:50%;
+        <br/> top:50%;
+        <br/> } </p>
+    <h3>21.html5\CSS3有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？</h3>
+    <p>HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，地理定位等功能的增加。
+        <br/>
+        <br/> * 绘画 canvas 元素
+        <br/>
+        <br/> 用于媒介回放的 video 和 audio 元素
+        <br/>
+        <br/> 本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失；
+        <br/> sessionStorage 的数据在浏览器关闭后自动删除
+        <br/>
+        <br/> 语意化更好的内容元素，比如 article、footer、header、nav、section
+        <br/>
+        <br/> 表单控件，calendar、date、time、email、url、search
+        <br/>
+        <br/> CSS3实现圆角，阴影，对文字加特效，增加了更多的CSS选择器 多背景 rgba
+        <br/>
+        <br/> 新的技术webworker, websockt, Geolocation
+        <br/> 移除的元素
+        <br/>
+        <br/> 纯表现的元素：basefont，big，center，font, s，strike，tt，u；
+        <br/>
+        <br/> 对可用性产生负面影响的元素：frame，frameset，noframes；
+        <br/>
+        <br/> * 是IE8/IE7/IE6支持通过document.createElement方法产生的标签，
+        <br/> 可以利用这一特性让这些浏览器支持HTML5新标签，
+        <br/>
+        <br/> 浏览器支持新标签后，还需要添加标签默认的样式：
+        <br/>
+        <br/> * 当然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架
+        <br/>
+    </p>
+    <h3>22.你怎么来实现页面设计图，你认为前端应该如何高质量完成工作? 一个满屏 品 字布局 如何设计?</h3>
+    <p> 首先划分成头部、body、脚部；。。。。。
+        <br/> 实现效果图是最基本的工作，精确到2px；
+        <br/> 与设计师，产品经理的沟通和项目的参与
+        <br/> 做好的页面结构，页面重构和用户体验
+        <br/> 处理hack，兼容、写出优美的代码格式
+        <br/> 针对服务器的优化、拥抱 HTML5。</p>
+</body>
+
+</html>

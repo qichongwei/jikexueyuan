@@ -1,0 +1,141 @@
+<!DOCTYPE>
+<html>
+ <head>
+     <meta charset="UTF-8">
+  <title>弹性盒模型</title>
+ </head>
+ <style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+     .box1{
+         width: 100px;
+         height: 100px;
+         padding: 5px;
+         border: solid 2px red;
+         background-color: #0000cc;
+        margin-left: 100px;
+         float: left;
+     }
+     .box2{
+         width: 100px;
+         height: 100px;
+         padding: 5px;
+         border: solid 2px red;
+         box-sizing: border-box;
+         background-color: #0000cc;
+         margin-left:100px;
+         float: left;
+     }
+     .box5{
+         clear:left;
+         margin-top: 20px;
+     }
+     .box3{
+         margin-left: 200px;
+         width: 200px;
+         height: 200px;
+         display:-webkit-box;
+         border: solid 2px red;
+         -webkit-box-align: center;
+         -webkit-box-pack: center;
+
+     }
+     .box4{
+         border: solid 2px red;
+         height: 100px;
+         width: 100px;
+     }
+     .box7{
+         width: 1000px;
+         -webkit-column-count: 3;
+         border: solid 2px red;
+
+
+     }
+     .box6{
+         width: 1000px;
+         height: 300px;
+         border: solid 2px greenyellow;
+         display: -webkit-flex;
+         flex-flow: row nowrap;
+     }
+     .div1{
+         background-color: #418c59;
+         flex:1;
+     }
+.div2{
+    background-color: #f5e327;
+    flex:1;
+}
+.div3{
+    background-color: #ffff00;
+    flex:1;
+}
+.box8{
+    width: 1000px;
+    height: 300px;
+    border: solid 2px greenyellow;
+    display: -webkit-flex;
+    flex-flow: column nowrap;
+}
+.div5{
+    background-color: #418c59;
+    flex:1;
+    order: 3;
+}
+.div4{
+    background-color: #f5e327;
+    flex:1;
+    order: 2;
+}
+.div6{
+    background-color: #ffff00;
+    flex:1;
+    order: 1;
+}
+ </style>
+ <body>
+    <div class="box1">正常盒子</div>
+    <div class="box2">怪异盒子</div>
+    <div class="box5">
+    <p>旧版盒子居中</p>
+    <div class="box3"><div class="box4"></div>
+    </div></div>
+    <div >
+     <p>文章分栏</p>
+     <div class="box7">等同于过渡版本的flex-pack属性和新版本的justify-content属性；
+         box-pack的对齐方式受box-orient影响；
+         默认情况下（即box-orient设置为horizontal）start和end所呈现的效果等同于左对齐和右对齐；
+         当box-orient设置为vertical时，start和end所呈现的效果等同于顶部对齐和底部对齐；
+         对应的脚本特性为boxPack。等同于过渡版本的flex-pack属性和新版本的justify-content属性；
+         box-pack的对齐方式受box-orient影响；
+         默认情况下（即box-orient设置为horizontal）start和end所呈现的效果等同于左对齐和右对齐；
+         当box-orient设置为vertical时，start和end所呈现的效果等同于顶部对齐和底部对齐；
+         对应的脚本特性为boxPack。等同于过渡版本的flex-pack属性和新版本的justify-content属性；
+         box-pack的对齐方式受box-orient影响；
+         默认情况下（即box-orient设置为horizontal）start和end所呈现的效果等同于左对齐和右对齐；
+         当box-orient设置为vertical时，start和end所呈现的效果等同于顶部对齐和底部对齐；
+         对应的脚本特性为boxPack。等同于过渡版本的flex-pack属性和新版本的justify-content属性；
+         box-pack的对齐方式受box-orient影响；
+         默认情况下（即box-orient设置为horizontal）start和end所呈现的效果等同于左对齐和右对齐；
+         当box-orient设置为vertical时，start和end所呈现的效果等同于顶部对齐和底部对齐；
+         对应的脚本特性为boxPack。</div>
+ </div>
+    <div>
+        <p>弹性盒子水平分栏</p>
+ <div class="box6">
+     <div class="div1">第一个</div>
+     <div class="div2">第二个</div>
+     <div class="div3">第三个</div>
+ </div></div>
+    <div>
+        <p>弹性盒子垂直分栏加排序</p>
+        <div class="box8">
+            <div class="div4">第一个</div>
+            <div class="div5">第二个</div>
+            <div class="div6">第三个</div>
+        </div></div>
+ </body>
+</html>

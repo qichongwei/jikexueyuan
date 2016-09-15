@@ -1,0 +1,27 @@
+/*设置通用样式*/
+  *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("PIC10.jpg");
+background-size: 100% 100%;
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+    color: #a94442;
+    font-weight: bolder;
+    letter-spacing: 10px;
+}
+.div1{
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius:20px;
+    background: -webkit-linear-gradient(#A6E1F9 ,#01B7E9);
+}
+form{
+    margin-top: 20px;
+}

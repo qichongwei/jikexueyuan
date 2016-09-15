@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <script src="test31.js"></script>
+    <style>
+div{
+    margin: 10px auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid #9d9d9d;
+    border-radius: 20px;
+}
+.text {
+            margin-top: 40px;
+        }
+        p{
+            margin-top: 60px;
+            color: rgb(249, 2, 2);
+        }
+        input{
+            margin-left: 10px;
+        width: 50px;
+        }
+       span{
+            margin-left: -40px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>简易计算器</h2>
+        <label for="text">x</label><input id="text" type="text" >
+        <br/>
+       <span><label for="text1">运算符</label><input id="text1" type="text" ></span>
+        <br/>
+        <label for="text2">y</label><input id="text2" type="text" >
+        <br/>
+        <input type="button" value="计算" class="text" onclick="qiwei()">
+        <p id="pid"></p>
+    </div>
+</body>
+</html>

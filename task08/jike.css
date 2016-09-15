@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ui-new-toolbar {
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    z-index: 2;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+.ui-new-toolbar-l {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+.ui-new-toolbar-btn {
+    float: left;
+}
+.btn-baidu {
+    background-position: center 4px;
+    border: 0;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+.btn-userhome {
+    background-position: center -463px;
+    margin-left: 10px;
+    border: 0;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+.ui-new-toolbar-r {
+    top: 0;
+    right: 0;
+}
+.ui-new-toolbar-r {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+.btn-search {
+    background-position: center -162px;
+    margin-right: 10px;
+    border: 0;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+.btn-subscribe {
+    background-position: center -107px;
+    border: 0;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-new-toolbar_6e9bc53.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+.ui-new-toolbar-btn {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+}
+.ui-new-toolbar-r .ui-new-toolbar-btn {
+    float: left;
+}
+.nav{
+    display: flex;
+    height: 33px;
+    width: 100%;
+    position: relative;
+    background-color: #3e98f0;
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+.nav li{
+    flex: 1;
+    display: block;
+    height: 33px;
+}
+.nava{
+    line-height:33px;
+    padding-bottom:3px ;
+}
+.aclick{
+    border-bottom: 1px solid #fff;
+}
+.nav div{
+    display: inline-block;
+
+}
+.nav li{
+    text-align: center;
+}
+.index-list-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+.index-list-item .index-list-image {
+    font-size: 0;
+    height: 68px;
+    vertical-align: middle;
+    width: 95px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    background-color: #F4F7F9;
+    position: relative;
+}
+.index-list-item .index-list-image img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.index-list-main-text {
+    height: 40px;
+    overflow: hidden;
+}
+.index-list-main-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    margin: -1px 0 4px 0;
+}
+.index-list-main-abs {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+.index-list-bottom {
+    margin-top: 10px;
+}
+.tip-time{
+    float: right;
+}
+/*后台样式*/
+.header{
+    width: 100%;
+    height: 100px;
+    background-color:  #3e98f0;padding:20px 30px ;
+}
+.left{
+    width: 20%;
+    height: 500px;
+    margin-top: 5px;
+    background-color: #46b8da;
+    padding-top: 5px;
+    float: left;
+}
+.div1 a:hover{
+    color: white;
+}
+h4{
+    text-align: center;
+    color:#2b542c;
+    letter-spacing: 5px;
+}
+.line{
+    width: 90%;
+    height: 0;
+    margin: 0 auto;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #fff;
+    margin-top: 5px;
+}
+.div3{
+    width: 80%;
+    height: 20px;
+    background:-webkit-linear-gradient(#46b8da,#0000cc);
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.right{
+    width: 78%;
+    height: 500px;
+    float: right;
+    border: solid 1px #46b8da;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.right div{
+    margin: 30px 60px;
+    vertical-align: top;
+}
+.right input{
+    width: 200px;
+    height: 30px;
+}

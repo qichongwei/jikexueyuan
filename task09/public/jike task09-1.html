@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度新闻后台</title>
+    <link href="stylesheets/jike.css" rel="stylesheet" type="text/css"/>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" ></script>
+</head>
+<body>
+<div class="header">
+    <h2>百度新闻后台管理系统</h2>
+</div>
+
+<div class="right1">
+    <div class="left">
+        <h4>功能菜单</h4>
+        <div class="line"></div>
+        <a class="div3" href="#" id="zeng">增添新闻</a>
+        <a class="div3" href="#" id="gai">修改新闻</a>
+        <a class="div3" href="#" id="shan">删除新闻</a>
+        <a class="div3" href="#" id="cha">查询新闻</a>
+        <a class="div3" href="#" >增删改查功能只对推荐页面有效</a>
+
+    </div>
+    <div class="right">
+        <form action="http://localhost:3910/1" method="GET">
+            <div><label for="newstitle">新闻标题:</label><input type="text" name="newstitle" id="newstitle" ></div>
+            <div><label for="newsimg">新闻图片:</label><input type="text" name="newsimg" id="newsimg" ></div>
+            <div> <label for="newscontent">新闻内容:</label><textarea type="text" name="newscontent" id="newscontent" ></textarea></div>
+            <div>  <label for="newstime">新闻时间:</label><input type="date" name="newstime" id="newstime" ></div>
+            <input type="submit" value="上传"><input type="reset" value="重置">
+        </form>
+    </div>
+    <div class="right2">
+        想要删除第几条就选择几就可以啦
+        <form action="http://localhost:3910/2" method="GET">
+            <div><label for="newstitle">删除条数:</label><input type="number" name="newsid"  ></div>
+            <!--<div><label for="newstitle">新闻标题:</label><input type="text" name="newstitle"  ></div>-->
+            <!--<div><label for="newsimg">新闻图片:</label><input type="text" name="newsimg"  ></div>-->
+            <!--<div> <label for="newscontent">新闻内容:</label><textarea type="text" name="newscontent" ></textarea></div>-->
+            <!--<div>  <label for="newstime">新闻时间:</label><input type="date" name="newstime"  ></div>-->
+            <input type="submit" value="删除"><input type="reset" value="重置">
+        </form>
+    </div>
+    <div class="right3">
+       想要修改第几条就选择几就可以啦
+        <form action="http://localhost:3910/3" method="GET">
+            <div><label for="newstitle">修改条数:</label><input type="number" name="newsid"  ></div>
+            <div><label for="newstitle">修改标题:</label><input type="text" name="newstitle" id="changeid" ></div>
+            <div><label for="newsimg">修改图片:</label><input type="text" name="newsimg" id="changeimg" ></div>
+            <div> <label for="newscontent">修改内容:</label><textarea type="text" name="newscontent" id="changecontent" ></textarea></div>
+            <div>  <label for="newstime">修改时间:</label><input type="date" name="newstime" id="changetime" ></div>
+            <input type="submit" value="修改"><input type="reset" value="重置">
+        </form>
+    </div>
+    <div class="right4">
+        想要查询第几条就选择几就可以啦
+        <form action="http://localhost:3910/4" method="GET">
+            <div><label for="newstitle">新闻条数:</label><input type="text" name="newsid" ></div>
+
+            <input type="submit" value="查询" id="chaxun"><input type="reset" value="重置">
+        </form>
+    </div>
+</div>
+<script src="javascripts/jike.js"></script>
+</body>
+</html>
